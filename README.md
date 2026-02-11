@@ -1,42 +1,68 @@
-# Desafio MS-900: Módulo 01 - Identidade e Acesso
+# Desafio MS-900: Módulo 01 - Identidade, Utilizadores e Grupos (Avançado)
 
-Este repositório contém o registro das atividades práticas realizadas durante o estudo do módulo de Identidade do **Microsoft 365 Fundamentals (MS-900)**. O foco principal foi a administração do **Microsoft Entra ID** (antigo Azure Active Directory).
 
-## 📋 Resumo das Atividades
+Este repositório documenta a execução prática das atividades do Módulo 1 do **Microsoft 365 Fundamentals (MS-900)**. O foco foi a administração de identidades, governança de grupos e segurança no **Microsoft Entra ID** (Azure Active Directory).
 
-Abaixo estão detalhadas as etapas configuradas no ambiente de laboratório, incluindo os usuários e grupos específicos criados:
+##  Resumo da Implementação
 
-###  Gestão de Utilizadores e Identidade
-* **Criação de Utilizadores Padrão:** Provisionamento de 8 contas principais (José Lucas, Ariete dos Santos,Sofia Alice, Luzia Chaves, Cleber dos Santos, Edvanio Domingos, Aurora José e Justo Capingala).
-* **Utilizadores de Estágio:** Criação de contas específicas sem atribuição de licença para os usuários Mechaque Estagiário e Suzana Estagiária.
-* **Acesso Externo (B2B):** Configuração do `user11-Parceiro Externo` via portal do Azure, superando desafios de navegação e permissões na interface.
-* **Manutenção de Atributos:** Alteração do **UPN (User Principal Name)** do `user05-Cleber dos Santos` para `Financeiro-Central`, visando a padronização do diretório.
-* **Segurança de Conta:** * Bloqueio de login realizado com sucesso para o usuário Justo Capingala.
-    * Reposição de password para Aurora José, configurada com senha automática e exigência de troca no primeiro acesso.
+Abaixo, detalho as fases executadas durante o laboratório, consolidando o aprendizado em administração de diretório.
 
-###  Grupos e Licenciamento Automático
-* **Estrutura de Grupos:** Criação de 5 Grupos de Segurança:
-* `GRP-TI`
-* `GRP-VENDAS`
-* `GRP-FINANCEIRO`
-* `GRP-DIRECAO`
-* `GRP-ESTAGIARIOS`.
-* **Licenciamento Baseado em Grupo:** Atribuição bem-sucedida de licenças do Microsoft 365 para os grupos
+---
+
+###  1. Gestão de Utilizadores (Provisionamento)
+Nesta fase, realizei a criação de identidades no diretório utilizando diferentes perfis de licença:
+
+* **Utilizadores Padrão:** Provisionamento de 8 contas principais para a estrutura organizacional:
+    * `user1- José Lucas`
+    * `user2- Ariete dos Santos`
+    * `user3- Infante Sofia Alice`
+    * `user4- Luzia Chaves`
+    * `user5- Cleber dos Santos`
+    * `user6- Edvanio Domingos`
+    * `user7- Aurora José`
+    * `user8- Justo Capingala`
+* **Contas de Estagiários (Unlicensed):** Criação de 2 utilizadores específicos sem atribuição de licença:
+    * `user09- Mechaque Estagiário`
+    * `user10- Suzana Estagiária`
+* **Colaboração B2B (Externo):** Configuração de 1 utilizador externo (`user11- Parceiro Externo`) via Portal do Azure. Mesmo enfrentando desafios na interface do portal, a criação foi confirmada com sucesso.
+
+###  2. Estrutura de Grupos e Licenciamento
+Implementação de modelos de gestão coletiva para otimizar a administração:
+
+* **Criação de Grupos de Segurança:** Estruturação de 5 grupos específicos:
+    * `GRP-TI`
+    * `GRP-VENDAS`
+    * `GRP-FINANCEIRO`
+    * `GRP-DIRECAO`
+    * `GRP-ESTAGIARIOS`.
+      
+* **Group-based Licensing:** Atribuição automatizada de licenças para os grupos
 * `GRP-TI`
 * `GRP-VENDAS`
 * `GRP-FINANCEIRO`.
-* **Grupos Dinâmicos:** Preparação do ambiente através da edição de atributos de contacto (Departamento: Vendas) para a utilizadora Sofia Alice. A implementação final foi limitada por restrições de licenciamento do ambiente de laboratório.
+* **Gestão de Grupos Dinâmicos:** Iniciei a configuração de pertença dinâmica editando os atributos de contacto da utilizadora `Sofia Alice` (Departamento: Vendas). 
+    > **Nota Técnica:** A conclusão desta fase foi limitada devido a restrições de licenciamento (necessário Azure AD Premium P1/P2) no ambiente de teste, mas a lógica de implementação foi aplicada.
 
-### Governança e Administração
-* **RBAC (Role-Based Access Control):** Tentativa de atribuição da Role de "Administrador de Utilizadores" ao utilizador José Lucas. Ação devidamente documentada, embora limitada por permissões de conta no sandbox.
-* **Relatórios:** Exportação da lista completa de utilizadores e dados do diretório em formato **CSV** para fins de auditoria e conformidade.
+### 3. Segurança e Manutenção de Identidade
+Execução de tarefas críticas de administração e segurança:
 
-##  Tecnologias Utilizadas
+* **Bloqueio de Login:** Suspensão de acesso realizada com sucesso para o `user8- Justo Capingala`.
+* **Self-Service Password Reset (SSPR):** Reposição forçada de password para a utilizadora `user7- Aurora José`, com configuração de troca obrigatória no próximo início de sessão.
+* **Governança de UPN:** Alteração do **User Principal Name** do `user05- Cleber dos Santos` para `Financeiro-Central`.
+
+###  4. Administração e Relatórios
+* **Exportação de Dados:** Geração de relatório de todos os utilizadores do diretório em formato **CSV**.
+* **RBAC (Role-Based Access Control):** Tentativa de atribuição da função de "Administrador de Utilizadores" ao `user1- José Lucas`.
+    > **Nota Técnica:** Ação limitada por falta de permissões globais no sandbox de laboratório para alteração de Roles administrativas.
+
+---
+
+## Tecnologias Utilizadas
 * **Microsoft Entra ID** (Azure Active Directory)
 * **Microsoft 365 Admin Center**
 
-*Documentação gerada como parte do progresso no Desafio MS-900.*
-
+---
+*Documentação gerada para registro de progresso no percurso de certificação Microsoft 365.*
 
 
 
