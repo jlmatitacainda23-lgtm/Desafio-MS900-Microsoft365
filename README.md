@@ -129,5 +129,40 @@ Foi realizada uma alteração nas definições da organização para "Não permi
 Finalizou-se com sucesso a automação do licenciamento. Através de grupos de segurança, demonstrou-se que novos utilizadores recebem automaticamente os planos necessários via herança. Além disso, estabeleceram-se controlos de segurança e funções administrativas específicas (User Administrator e Billing Reader), garantindo uma operação eficiente e financeiramente segura do tenant.
 
 
-
 ----
+# Relatório de Implementação: Módulo 3
+## Exchange Online (Gestão Operacional)
+
+Este relatório descreve as atividades de configuração e administração realizadas no Exchange Online para a organização LearnIT, focando em eficiência, segurança e colaboração.
+
+---
+
+###  Fase 1: Criação de Caixas Partilhadas (Shared Mailboxes)
+Nesta etapa inicial, configurei endereços de correio eletrónico coletivos, como `financeiro@` e `suporte@`. Esta ação permitiu a otimização de custos, pois estas caixas não exigem licenças pagas, e centralizou a comunicação dos departamentos, permitindo que vários membros respondam a partir de um único endereço profissional.
+
+###  Fase 2: Atribuição de Membros e Gestão de Permissões
+Procedi à configuração de acessos para as caixas partilhadas, delegando privilégios à utilizadora Ana Paula Ferreira. Foram atribuídas permissões de "Full Access" (Leitura e Gestão) e "Send As" (Enviar como). Esta configuração elimina a partilha de passwords e garante que apenas pessoal autorizado aceda a dados sensíveis, mantendo a conformidade da empresa.
+
+###  Fase 3: Transformação de Conta em Caixa Partilhada
+Converti uma conta de utilizador comum para o formato de caixa partilhada através do Centro de Administração. O objetivo principal foi a poupança de recursos de licenciamento e a preservação do histórico de e-mails antigos, permitindo que a equipa continue a gerir a conta de forma organizada sem custos adicionais.
+
+###  Fase 4: Criação de Contacto Externo
+Adicionei parceiros e fornecedores externos à lista de contactos global da organização. Esta configuração facilita a comunicação interna, pois o e-mail desses parceiros aparece automaticamente para todos os colaboradores ao redigirem mensagens, tornando o fluxo de trabalho mais simples e profissional.
+
+###  Fase 5: Configuração de Respostas Automáticas
+Ativei mensagens de resposta automática na caixa do Financeiro para remetentes internos e externos. Esta funcionalidade garante um feedback imediato aos utilizadores, informando que a mensagem foi recebida e será tratada em breve, o que eleva o nível de profissionalismo no atendimento.
+
+###  Fase 6: Regras de Encaminhamento
+Configurei o sistema para que todos os e-mails recebidos numa caixa partilhada sejam encaminhados automaticamente para um utilizador específico. Esta regra assegura que mensagens críticas sejam visualizadas rapidamente pelo gestor responsável, evitando que pedidos fiquem esquecidos em caixas de entrada gerais.
+
+###  Fase 7: Segurança e Protocolos de Correio
+Para reforçar a proteção das contas, desativei os protocolos antigos POP e IMAP. Esta medida de segurança protege a organização contra invasões, garantindo que os utilizadores utilizem apenas aplicações modernas e seguras do Microsoft 365 para aceder ao correio eletrónico.
+
+###  Fase 8: Grupo de Segurança com E-mail
+Criei o grupo "Direção_Segura", que combina permissões de segurança com capacidades de correio eletrónico. Este grupo facilita a comunicação em massa com a equipa e assegura que o acesso a documentos importantes seja restrito apenas a pessoas autorizadas, organizando a gestão da empresa.
+
+###  Fase 9: Verificação de Limites de Envio
+Acedi às definições de restrição no Centro de Administração do Exchange para validar os limites de tamanho de mensagens na conta Financeiro. Verifiquei que os limites estão fixados em aproximadamente 35 MB para envio e 36 MB para receção, garantindo que a caixa opere de forma estável e dentro dos parâmetros da organização.
+
+###  Fase 10: Consulta de Logs de Envio (Message Trace)
+Concluí o módulo utilizando a ferramenta de rastreamento de mensagens para monitorizar o fluxo de e-mails. Esta consulta em tempo real permitiu confirmar o estado de entrega das mensagens e validar que todo o sistema de comunicação da LearnIT está a funcionar corretamente e sem falhas.
