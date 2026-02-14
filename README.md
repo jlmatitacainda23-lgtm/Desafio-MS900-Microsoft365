@@ -166,3 +166,36 @@ Acedi às definições de restrição no Centro de Administração do Exchange p
 
 ###  Fase 10: Consulta de Logs de Envio (Message Trace)
 Concluí o módulo utilizando a ferramenta de rastreamento de mensagens para monitorizar o fluxo de e-mails. Esta consulta em tempo real permitiu confirmar o estado de entrega das mensagens e validar que todo o sistema de comunicação da LearnIT está a funcionar corretamente e sem falhas.
+
+---
+
+# Relatório de Implementação: Módulo 4
+## Microsoft Teams (Colaboração Avançada)
+
+Este relatório detalha as configurações de governação, estrutura de equipas e políticas de comunicação implementadas no Microsoft Teams para garantir um ambiente de colaboração seguro e organizado.
+
+---
+
+###  Fase 1: Criação de Equipas no Teams
+Nesta fase inicial, criei as equipas de **Vendas**, **TI** e **Financeiro** através da central de administração. Todas foram configuradas como **privadas**, garantindo que a comunicação interna seja restrita e que apenas membros autorizados de cada departamento tenham acesso ao conteúdo.
+
+###  Fase 2: Criação de Canais Privados
+Dentro da equipa Financeiro, implementei o canal restrito **"Direção_Privado"**. Este canal foi configurado com o nível de privacidade "Private", exibindo o ícone de cadeado. Esta configuração assegura que discussões estratégicas e documentos confidenciais fiquem acessíveis apenas a um subgrupo específico de membros autorizados.
+
+###  Fase 3: Criação de Canais Partilhados
+Finalizei a estruturação das equipas incluindo um espaço dedicado ao **"Projeto_Externo"**. Utilizei canais partilhados para permitir uma colaboração fluida entre diferentes departamentos e parceiros, mantendo sempre o nível de privacidade restrito para assegurar a segurança da plataforma.
+
+###  Fase 4: Adição de Membros à Equipa
+Procedi à gestão de utilizadores na equipa de **Vendas**, adicionando três colaboradores específicos. Esta ação foi fundamental para ativar o departamento comercial, permitindo o início imediato dos processos de comunicação e trabalho partilhado.
+
+###  Fase 5: Definição de Proprietários (Owners)
+Configurei um responsável adicional para a equipa de TI, alterando a sua função para **"Owner"** (Proprietário). Com esta gestão partilhada, garanti que a equipa possa ser administrada de forma independente, permitindo que outros utilizadores também giram permissões e membros.
+
+###  Fase 6: Políticas de Mensagens Personalizadas
+Criei a política **"Politica_Seguranca_Empresa"** no painel de administração. Esta política estabelece regras de comunicação mais rígidas, garantindo que as ferramentas de chat sejam utilizadas de forma profissional, segura e em conformidade com as normas da organização.
+
+###  Fase 7: Controlo de Criação de Equipas
+Configurei restrições ao nível da organização para impedir que utilizadores comuns criem equipas de forma descontrolada. Ao centralizar esta permissão na administração, garantimos um ambiente de trabalho limpo, organizado e focado exclusivamente nos departamentos oficiais.
+
+###  Fase 8: Políticas de Reunião e Gravação
+Ajustei as "Políticas de reunião" para garantir que a funcionalidade de gravação e transcrição esteja ativa. Esta configuração assegura que as reuniões importantes possam ser registadas automaticamente para consulta futura, facilitando a partilha de conhecimento entre a equipa.
